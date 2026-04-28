@@ -1,17 +1,63 @@
 {
-  "id": "plugin.com.pot-app.lingva",
+  "id": "plugin.com.pot-app.dict",
   "plugin_type": "translate",
-  "icon": "lingva.svg",
-  "display": "Lingva",
-  "homepage": "https://github.com/pot-app/pot-app-translate-plugin-template",
-  "needs": [{ "key": "requestPath", "display": "请求地址" }],
+  "icon": "icon.png",
+  "display": "本地日语词典",
+  "needs": [
+    {
+      "key": "apiUrl",
+      "display": "词典ip地址",
+      "type": "input"
+    },
+    {
+      "key": "enable_daijirin",
+      "display": "大辞林",
+      "type": "select",
+      "options": {
+        "1": "✅ 启用",
+        "0": "❌ 禁用"
+      },
+      "default": "1"
+    },
+    {
+      "key": "enable_meikyou",
+      "display": "明鏡国語辞典",
+      "type": "select",
+      "options": {
+        "1": "✅ 启用",
+        "0": "❌ 禁用"
+      },
+      "default": "1"
+    },
+    {
+      "key": "enable_daijisen",
+      "display": "大辞泉",
+      "type": "select",
+      "options": {
+        "1": "✅ 启用",
+        "0": "❌ 禁用"
+      },
+      "default": "0"
+    },
+    {
+      "key": "enable_kojien",
+      "display": "広辞苑",
+      "type": "select",
+      "options": {
+        "1": "✅ 启用",
+        "0": "❌ 禁用"
+      },
+      "default": "0"
+    }
+  ],
   "language": {
     "auto": "auto",
-    "zh_cn": "zh",
-    "zh_tw": "zh_HANT",
-    "en": "en",
-    "ja": "ja",
-    "ko": "ko",
+    "zh_cn": "cn",
+    "zh_tw": "cn",
+    "mn_mo": "cn",
+    "en": "gb",
+    "ja": "jp",
+    "ko": "kr",
     "fr": "fr",
     "es": "es",
     "ru": "ru",
@@ -19,18 +65,14 @@
     "it": "it",
     "tr": "tr",
     "pt_pt": "pt",
-    "pt_br": "pt",
-    "vi": "vi",
+    "pt_br": "br",
+    "vi": "vn",
     "id": "id",
     "th": "th",
     "ms": "ms",
-    "ar": "ar",
-    "hi": "hi",
-    "mn_cy": "mn",
-    "mn_mo": "mn",
-    "km": "km",
-    "nb_no": "no",
-    "nn_no": "no",
-    "fa": "fa"
+    "ar": "ae",
+    "hi": "in",
+    "km": "kh",
+    "mn_cy": "mn"
   }
 }
